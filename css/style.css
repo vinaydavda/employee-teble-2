@@ -1,0 +1,87 @@
+.input-table, tr{
+    border: 1px solid black;
+}
+
+.input-table {
+    width: 300px;
+    box-shadow:;
+}
+
+.input-table td {
+    height: 30px;
+    width: 50%;
+}
+
+input[type='text'] {
+    background-color: rgb(235, 250, 255);
+    height: 25px;
+    border: 0.5px solid rgb(75, 75, 75);
+}
+
+/* input[type='text']:focus {
+    outline-color: red;
+} */
+
+textarea{
+    width: 96%;
+    background-color: rgb(235, 250, 255);
+}
+
+.align-middle {
+    text-align: center;
+    justify-content: space-around;
+}
+
+.buttons {
+    border-top: 0;
+}
+
+.buttons td {
+    text-align: center;
+    padding: 5px;
+}
+
+button {
+    height: 30px;
+    width: 100px;
+    background-color: rgb(189, 189, 189);
+}
+
+/* Exercise 2 Employee Database */
+
+#employee-list {
+    margin-top: 100px;
+    border-collapse: collapse;
+}
+
+#employee-list th, #employee-list td {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+#employee-list th {
+    background-color: rgb(116, 116, 116);
+    color: white;
+}
+
+#employee-list tr:nth-child(even) {
+    background-color: rgb(211, 214, 214);
+}
+
+/* Table Scrollbar and fixed-height */
+
+#employee-list tbody {
+    display: block;
+    height: 140px;
+    overflow: auto;
+}
+
+#employee-list thead, #employee-list tbody tr {
+    display: table;
+    width: 800px;
+    table-layout: fixed;/* even columns width , fix width of table too*/
+}
+
+#employee-list {
+    display: none;
+}

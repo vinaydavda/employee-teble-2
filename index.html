@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/script.js"></script>
+
+    <title>Silent Infotech</title>
+</head>
+
+<body>
+    <table class="input-table">
+        <tr>
+            <td><label for="first_name">First Name</label></td>
+            <td><input type="text" name="first_name" id="first_name" autofocus /></td>
+        </tr>
+        <tr>
+            <td><label for="last_name">Last Name</label></td>
+            <td><input type="text" name="last_name" id="last_name" /></td>
+        </tr>
+        <tr>
+            <td>Gender</td>
+            <td>
+                <input type="radio" id="male" name="gender" value="male" />
+                <label for="male">Male</label>
+
+                <input type="radio" id="female" name="gender" value="female" />
+                <label for="female">Female</label>
+            </td>
+        </tr>
+        <tr>
+            <td>Marital Status</td>
+            <td>
+                <input type="radio" id="married" name="marital_status" value="married" />
+                <label for="married">Married</label>
+
+                <input type="radio" id="unmarried" name="marital_status" value="unmarried" />
+                <label for="unmarried">Unmarried</label>
+            </td>
+        </tr>
+        <tr id="spouse_tr">
+            <td><label for="spouse_name">Spouse Name</label></td>
+            <td><input type="text" name="spouse_name" id="spouse_name" /></td>
+        </tr>
+        <tr>
+            <td><label for="other_details">Other Details</label></td>
+            <td><textarea name="other_details" id="other_details" rows="3"></textarea></td>
+        </tr>
+        <tr>
+            <td id="messagebox" colspan="2"></td>
+        </tr>
+    </table>
+    <table class="buttons input-table">
+        <tr>
+            <td>
+                <button onclick="resetForm()">RESET</button>
+            </td>
+            <td>
+                <button style="background-color: green; color: white;" id="submit" onclick="validation()">SAVE</button>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2"><button style="background-color: rgb(92, 92, 150); color: white;" onclick="viewTable()">VIEW &gt;</button></td>
+        </tr>
+    </table>
+
+    <table id="employee-list">
+        <thead id='employeeHead'>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Gender</th>
+                <th>Marital Status</th>
+                <th>Spouse Name</th>
+                <th>Other Details</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id='employeeBody'></tbody>
+    </table>
+</body>
+
+</html>
